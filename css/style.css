@@ -336,3 +336,21 @@ body {
 #contact .center .contact-form .form-group .form-control button:hover {
   background: #e16502;
 }
+
+footer {
+  margin-top: 20px;
+  height: 10vh;
+  background: #F2F4F7;
+  color: #FD7E19;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+footer h3 {
+  padding: 10px;
+}
