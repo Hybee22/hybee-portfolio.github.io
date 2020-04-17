@@ -329,8 +329,8 @@ body {
   background: #FD7E19;
   color: #F2F4F7;
   font-size: 16px;
-  font-weight: 600;
   cursor: pointer;
+  font-weight: 600;
 }
 
 #contact .center .contact-form .form-group .form-control button:hover {
