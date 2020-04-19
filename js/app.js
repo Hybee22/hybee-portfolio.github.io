@@ -10,7 +10,6 @@ const fixNav = () => {
         document.body.style.paddingTop = 0;
         document.body.classList.remove('fixed-nav')
     }
-    console.log(toN, window.scrollY)
 }
 
 window.addEventListener('scroll', fixNav)

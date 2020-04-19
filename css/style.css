@@ -11,6 +11,10 @@ body {
   font-family: 'Baloo Tamma 2', cursive;
 }
 
+.img-container {
+  display: none;
+}
+
 .nav {
   display: flex;
   justify-content: space-between;
@@ -163,11 +167,11 @@ body {
   font-size: 24px;
 }
 
-#about .bio-text ul li {
+#about .bio-text ul li, #about .hobbies ul li, #about .interests ul li {
   margin-left: 50px;
 }
 
-#about .bio-text ul p {
+#about .bio-text ul p, #about .hobbies ul p, #about .interests ul p {
   color: #FD7E19;
   text-decoration: none;
 }
@@ -329,8 +333,8 @@ body {
   background: #FD7E19;
   color: #F2F4F7;
   font-size: 16px;
-  cursor: pointer;
   font-weight: 600;
+  cursor: pointer;
 }
 
 #contact .center .contact-form .form-group .form-control button:hover {
@@ -353,4 +357,61 @@ footer {
 
 footer h3 {
   padding: 10px;
+}
+
+@media (max-width: 400px) {
+  .img-container {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+  }
+  .img-container .overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    opacity: .5;
+    background: #232f34;
+  }
+  .img-container img {
+    height: 100%;
+  }
+  .video-container {
+    display: none;
+  }
+  .nav {
+    padding: 0 30px;
+  }
+  .nav .nav-links {
+    justify-content: space-evenly;
+    width: 230px;
+    font-size: 14px;
+  }
+  #about .card-container {
+    margin-top: 100%;
+  }
+  #about .bio-holder {
+    height: 100vh;
+    margin-top: 40%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  #about .bio-holder .bio-text, #about .bio-holder .hobbies, #about .bio-holder .interests {
+    margin-top: 20px;
+  }
+  #about .bio-holder .hobbies {
+    position: relative;
+    right: 60px;
+  }
+  #contact {
+    margin-top: 190%;
+  }
+  #contact h3 {
+    margin-bottom: 20px;
+  }
 }
